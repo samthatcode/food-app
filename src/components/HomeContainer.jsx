@@ -30,7 +30,7 @@ const HomeContainer = () => {
           </span>
         </p>
 
-        <p className="text-base text-textColor text-justify  md:text-left md:w-[80%]">
+        <p className="text-base text-textColor text-center  md:text-left md:w-[80%]">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima velit
           eaque fugit distinctio est nam voluptatum architecto, porro iusto
           deserunt recusandae ipsa minus eos sunt, dolores illo repellat facere
@@ -64,11 +64,11 @@ const HomeContainer = () => {
                   className="w-20 lg:w-40 -mt-10"
                   alt="I1"
                 />
-                <p className="text-[14px] lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
+                <p className="text-[16px] lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
                   {n.name}
                 </p>
 
-                <p className="text-[10px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3">
+                <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3">
                   {n.decp}
                 </p>
 
