@@ -4,13 +4,15 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAzeeSUYf3gV7Zfww8RAPLcntuB-5gQM4w",
-    authDomain: "food-app-6d414.firebaseapp.com",
-    databaseURL: "https://food-app-6d414-default-rtdb.firebaseio.com",
-    projectId: "food-app-6d414",
-    storageBucket: "food-app-6d414.appspot.com",
-    messagingSenderId: "232011676688",
-    appId: "1:232011676688:web:dcbc7b9492fefa025b1e95"
+    apiKey: import.meta.env.VITE_REACT_APP_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_REACT_APP_FIREBASE_MESSAGING_SENDER,
+    appId: import.meta.env.VITE_REACT_APP_FIREBASE_APP_ID
+
+
 };
 
 const app = getApps.length > 0 ? getApp() : initializeApp(firebaseConfig);
